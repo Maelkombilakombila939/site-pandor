@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Groupe Pandor Énergie</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      border-bottom: 2px solid #e0e0e0;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #bfa133;
+    }
+    nav {
+      text-align: center;
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #555;
+    }
+    .container {
+      max-width: 800px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #444;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+    input, textarea {
+      padding: 10px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background-color: #bfa133;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #a9902b;
+    }
+    footer {
+      background-color: #333;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Contact</h1>
+    <nav>
+      <a href="index.html">Accueil</a>
+      <a href="anti-palu.html">Anti-Palu Heroes</a>
+      <a href="foret-des-abeilles.html">Forêt des Abeilles</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Contactez le Groupe Pandor Énergie</h2>
+    <p>Envoyez-nous un message directement via ce formulaire :</p>
+
+    <form action="https://formsubmit.co/komalegrand@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Votre nom" required>
+      <input type="email" name="email" placeholder="Votre email" required>
+      <input type="text" name="subject" placeholder="Sujet de votre message" required>
+      <textarea name="message" rows="5" placeholder="Votre message..." required></textarea>
+
+      <!-- Formsubmit options -->
+      <input type="hidden" name="_next" value="https://maelkombilakombila939.github.io/site-pandor/contact.html?message=sent">
+      <input type="hidden" name="_captcha" value="false">
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+
+  <footer>
+    <p>© 2025 Groupe Pandor Énergie. Tous droits réservés.</p>
+    <p>Contact : komalegrand@gmail.com | WhatsApp : 05166622</p>
+  </footer>
+</body>
+</html>
