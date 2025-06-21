@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
@@ -31,19 +31,25 @@
       color: #555;
     }
     .container {
-      max-width: 900px;
+      max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
     }
     h2 {
       color: #444;
+      border-bottom: 2px solid #bfa133;
+      padding-bottom: 5px;
     }
-    img {
-      max-width: 100%;
-      border-radius: 10px;
-    }
-    .content {
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
       margin-top: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
     footer {
       background-color: #333;
@@ -55,31 +61,44 @@
   </style>
 </head>
 <body>
-  <header>
-    <h1>Groupe Pandor Énergie</h1>
-    
-<nav>
-  <a href="index.html">Accueil</a>
-  <a href="anti-palu.html">Anti-Palu Heroes</a>
-  <a href="foret-des-abeilles.html">Forêt des Abeilles</a>
-  <a href="mailto:komalegrand@gmail.com">Contact</a>
-</nav>
 
-  </header>
+<header>
+  <h1>Groupe Pandor Énergie</h1>
+  <nav>
+    <a href="index.html">Accueil</a>
+    <a href="anti-palu.html">Anti-Palu Heroes</a>
+    <a href="foret-des-abeilles.html">Forêt des Abeilles</a>
+    <a href="contact.html">Contact</a>
+    <a href="about.html">À propos</a>
+  </nav>
+</header>
 
-  <div class="container">
-    <h2>Bienvenue sur le site officiel du Groupe Pandor Énergie</h2>
-    <img src="logo-pandor-energie.png" alt="Logo Pandor Énergie">
-    <div class="content">
-      <p>Le Groupe Pandor Énergie met la matière grise au service de nos communautés à travers des projets éducatifs, culturels et technologiques.</p>
-      <p>Découvrez nos projets phares tels que <strong>Anti-Palu Heroes</strong>, un jeu éducatif sur la santé publique, et la série animée <strong>Au cœur de la forêt des abeilles</strong>.</p>
-      <p>D'autres initiatives innovantes seront ajoutées progressivement, avec toujours le même objectif : <em>éclairer, divertir et transmettre</em>.</p>
-    </div>
+<div class="container">
+  <h2>Bienvenue sur notre site</h2>
+  <p>Le Groupe Pandor Énergie met la matière grise au service de nos communautés à travers des projets éducatifs, culturels et innovants.</p>
+
+  <h2>Galerie de projets</h2>
+
+  <h3>Anti-Palu Heroes</h3>
+  <div class="gallery">
+    <img src="anti1.jpg" alt="Anti-Palu Image 1">
+    <img src="anti2.jpg" alt="Anti-Palu Image 2">
+    <img src="anti3.jpg" alt="Anti-Palu Image 3">
+    <img src="anti1.png" alt="Anti-Palu Image 4">
   </div>
 
-  <footer>
-    <p>© 2025 Groupe Pandor Énergie. Tous droits réservés.</p>
-    <p>Contact : komalegrand@gmail.com | WhatsApp : 05166622</p>
-  </footer>
+  <h3>Au cœur de la forêt des abeilles</h3>
+  <div class="gallery">
+    <img src="abeilles1.jpg" alt="Forêt des Abeilles 1">
+    <img src="abeilles2.jpg" alt="Forêt des Abeilles 2">
+    <img src="abeilles3.jpg" alt="Forêt des Abeilles 3">
+  </div>
+</div>
+
+<footer>
+  <p>© 2025 Groupe Pandor Énergie. Tous droits réservés.</p>
+  <p>Contact : komalegrand@gmail.com | WhatsApp : 05166622</p>
+</footer>
+
 </body>
 </html>
